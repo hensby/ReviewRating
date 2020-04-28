@@ -1,10 +1,10 @@
-from flask import Flask, url_for, request, redirect
+from flask import Flask, url_for, request, redirect, Blueprint
 from flask import render_template
 import model
 
 app = Flask(__name__)
 
-
+bp = Blueprint('task_list', __name__)
 # @app.route('/')
 @app.route('/')
 def hello():
