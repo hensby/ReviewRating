@@ -1,2 +1,1 @@
-web: python app.py
-heroku ps:scale web=1
+echo "web: flask db upgrade; gunicorn task_list:'create_app()'" > Procfile
