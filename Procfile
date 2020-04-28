@@ -1,1 +1,1 @@
-echo "web: flask db upgrade; gunicorn task_list:'create_app()'" > Procfile
+web: flask db upgrade; gunicorn task_list:'create_app()'
