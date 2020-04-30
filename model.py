@@ -65,7 +65,7 @@ def sentence_vectors(model, sentence):
     # words = sentence
     print(words)
     # Collecting words that are known to the model
-    model_voc = set(model.vocab.keys())
+    model_voc = set(model.wv.vocab.keys())
     print(len(model_voc))
     sent_vector = np.zeros(model.vector_size, dtype="float32")
 
