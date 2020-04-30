@@ -4,4 +4,4 @@ nltk==3.4.5
 re==2.2.1
 seaborn==0.10.0
 gensim==3.8.0
-sklearn==0.22.2.post1
+scikit-learn==0.22.2.post1
