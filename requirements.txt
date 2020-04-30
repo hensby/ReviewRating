@@ -1,8 +1,4 @@
-# This file may be used to create an environment using:
-# $ conda create --name <env> --file <this file>
-# platform: linux-64
-_libgcc_mutex=0.1=main
-_pytorch_select=0.2=gpu_0
+
 asn1crypto=1.3.0=py36_0
 beautifulsoup4=4.9.0=py36_0
 blas=1.0=mkl
