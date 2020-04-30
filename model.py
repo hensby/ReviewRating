@@ -43,7 +43,7 @@ def predict(text):
         map(lambda sentences: list(filter(lambda lst: lst, sentences)), data.tokenized_sentences))
     print(data)
     # sentence = data['tokenized_sentences'][0]
-    W2Vmodel = Word2Vec.load("static/Word2Vec2")
+    W2Vmodel = Word2Vec.load("static/Word2Vec2", allow_pickle=True).wv
 
     data['sentence_vectors'] = list(map(lambda sen_group:
                                         sentence_vectors(W2Vmodel, sen_group),
