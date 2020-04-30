@@ -3,10 +3,8 @@ from flask import render_template
 import model
 
 app = Flask(__name__)
-
-bp = Blueprint('task_list', __name__)
-# @app.route('/')
 @app.route('/')
+# @app.route('/')
 def hello():
     return render_template('review.html')
 

@@ -22,11 +22,11 @@ from sklearn import ensemble
 
 
 def predict(text):
-    model_lr = joblib.load('static/save/model_lr_1000k.pkl')
+    model_lr = joblib.load('static/save/model_lr.pkl')
     model_svm = joblib.load('static/save/model_svm.pkl')
     model_random_forest_regressor = joblib.load('static/save/model_random_forest.pkl')
-    model_bayes_ridge = joblib.load('static/save/model_bayes_1000k.pkl')
-    data = {'comment': Series([text])}
+    model_bayes_ridge = joblib.load('static/save/model_bayes.pkl')
+    data = {'comment': Series(text)}
     data = pd.DataFrame(data)
     print(data)
     data['comment'] = data['comment'].apply(remove_between_square_brackets)
@@ -43,13 +43,13 @@ def predict(text):
         map(lambda sentences: list(filter(lambda lst: lst, sentences)), data.tokenized_sentences))
     print(data)
     # sentence = data['tokenized_sentences'][0]
-    W2Vmodel = gensim.models.word2vec.Word2Vec.load("static/Word2Vec.w2v").wv
+    W2Vmodel = Word2Vec.load("static/Word2Vec2").wv
 
     data['sentence_vectors'] = list(map(lambda sen_group:
                                         sentence_vectors(W2Vmodel, sen_group),
                                         data.tokenized_sentences))
     text = vectors_to_feats(data, 300)
-
+    print(text)
     lr_y_predict = model_lr.predict(text)
     svm_y_predict = model_svm.predict(text)
     bayes_y_predict = model_bayes_ridge.predict(text)
@@ -63,10 +63,10 @@ def sentence_vectors(model, sentence):
     #     print(sentence)
     words = np.concatenate(sentence)
     # words = sentence
-    # print(sentence)
+    print(words)
     # Collecting words that are known to the model
     model_voc = set(model.vocab.keys())
-    # print(model_voc)
+    print(len(model_voc))
     sent_vector = np.zeros(model.vector_size, dtype="float32")
 
     # Use a counter variable for number of words in a text
@@ -149,11 +149,11 @@ def remove_stopwords(text, is_lower_case=False):
 # Apply function on review column
 
 
-#
-# if __name__ == '__main__':
-#     print(predict("This is a great game.  I've even got a number of non game players enjoying it.  Fast to learn and always changing."))
-#     # text = "you are super good"
-#     # sentence = map(nltk.word_tokenize, text)
-#     # sentence = filter(lambda lst: lst, sentence)
-#     # print(sentence)
-#     # print(sklearn.__version__ )
+
+if __name__ == '__main__':
+    print(predict(["This is a great game. I've even got a number of non game players enjoying it.  Fast to learn and always changing.","This is a great game. I've even got a number of non game players enjoying it.  Fast to learn and always changing."]))
+    # text = "you are super good"
+    # sentence = map(nltk.word_tokenize, text)
+    # sentence = filter(lambda lst: lst, sentence)
+    # print(sentence)
+    # print(sklearn.__version__ )
