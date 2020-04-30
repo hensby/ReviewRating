@@ -1,2 +1,4 @@
 Word2Vec2.wv.vectors.npy filter=lfs diff=lfs merge=lfs -text
 Word2Vec2.trainables.syn1neg.npy filter=lfs diff=lfs merge=lfs -text
+*Word2Vec2.wv.vectors.npy filter=lfs diff=lfs merge=lfs -text
+*Word2Vec2.trainables.synlneg.npy filter=lfs diff=lfs merge=lfs -text
