@@ -1,16 +1,13 @@
 # ReviewRating
-
 ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/Django)
 ![PyPI](https://img.shields.io/pypi/v/pip)
 ![](https://img.shields.io/badge/flask-1.1.2-brightgreen)
 ![](https://img.shields.io/badge/ubuntu-18.0.4-orange)
 ![](https://img.shields.io/badge/Google%20Cloud-Compute%20Engine-red)
-=======
 ## Deployment tools:  
 Google Cloud Compute Engine
 ## Platform and environment: 
 Flask==1.1.2
-
 
 Other libraries version informations are in requirement.txt
 
@@ -46,4 +43,3 @@ Expose the Flask HTTP port (5000) from the VM’s firewall. This is done via gcl
 gcloud compute firewall-rules create open-flask-rule --allow tcp:5000 --source-tags=flask-demo --source-ranges=0.0.0.0/0
 ```
 Or you can set the firewall in yout Google Instance in the browser.
-
