@@ -3,7 +3,16 @@
 Google Cloud Compute Engine
 ## Platform and environment: 
 Flask==1.1.2
+****
+	
+|作者|果冻虾仁|
+|---|---
 |知乎|[![zhihu-shield]][zhihu]
+|公众号|编程往事
+
+
+****
+
 Other libraries version informations are in requirement.txt
 
 ## Deployment process
