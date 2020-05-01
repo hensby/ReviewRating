@@ -103,7 +103,7 @@ smart-open==1.11.1
 soupsieve==2.0
 style==1.1.0
 tensorboard==2.0.0
-tensorflow==2.0.0
+tensorflow==2.0.1
 tensorflow-estimator==2.0.0
 termcolor==1.1.0
 terminado==0.8.3
