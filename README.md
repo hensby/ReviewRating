@@ -1,16 +1,12 @@
 # ReviewRating
+
+
+
 ## Deployment tools:  
 Google Cloud Compute Engine
 ## Platform and environment: 
 Flask==1.1.2
-****
-	
-[![Build status](https://img.shields.io/travis/Pythonity/icon-font-to-png.svg)][travis]
-[![Test coverage](https://img.shields.io/coveralls/Pythonity/icon-font-to-png.svg)][coveralls]
-[![PyPI version](https://img.shields.io/pypi/v/icon_font_to_png.svg)][pypi]
-[![Python versions](https://img.shields.io/pypi/pyversions/icon_font_to_png.svg)][pypi]
-[![License](https://img.shields.io/github/license/Pythonity/icon-font-to-png.svg)][license]
-****
+
 
 Other libraries version informations are in requirement.txt
 
