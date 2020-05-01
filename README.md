@@ -1,15 +1,11 @@
 # ReviewRating
-<<<<<<< HEAD
+
 ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/Django)
 ![PyPI](https://img.shields.io/pypi/v/pip)
 ![](https://img.shields.io/badge/flask-1.1.2-brightgreen)
 ![](https://img.shields.io/badge/ubuntu-18.0.4-orange)
 ![](https://img.shields.io/badge/Google%20Cloud-Compute%20Engine-red)
 =======
-
-
-
->>>>>>> d9e82c59645736664fa5d30ac2ad1260d6ebc2a7
 ## Deployment tools:  
 Google Cloud Compute Engine
 ## Platform and environment: 
@@ -51,16 +47,3 @@ gcloud compute firewall-rules create open-flask-rule --allow tcp:5000 --source-t
 ```
 Or you can set the firewall in yout Google Instance in the browser.
 
-[coveralls]: https://coveralls.io/github/Pythonity/icon-font-to-png
-[github]: https://github.com/Pythonity/icon-font-to-png
-[github add issue]: https://github.com/Pythonity/icon-font-to-png/issues/new
-[if2p osx bug]: https://github.com/Pythonity/icon-font-to-png/issues/2#issuecomment-197068427
-[license]: https://github.com/Pythonity/icon-font-to-png/blob/master/LICENSE
-[odyniec]: https://github.com/odyniec
-[odyniec fa2p]: https://github.com/odyniec/font-awesome-to-png
-[pawelad]: https://github.com/pawelad
-[pillow]: https://pillow.readthedocs.org/en/latest/installation.html
-[pypi]: https://pypi.python.org/pypi/icon_font_to_png
-[pythonity]: https://pythonity.com/
-[pythonity blog]: http://blog.pythonity.com/
-[travis]: https://travis-ci.org/Pythonity/icon-font-to-png
