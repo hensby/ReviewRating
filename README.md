@@ -5,12 +5,11 @@ Google Cloud Compute Engine
 Flask==1.1.2
 ****
 	
-|作者|果冻虾仁|
-|---|---
-|知乎|[![zhihu-shield]][zhihu]
-|公众号|编程往事
-
-
+[![Build status](https://img.shields.io/travis/Pythonity/icon-font-to-png.svg)][travis]
+[![Test coverage](https://img.shields.io/coveralls/Pythonity/icon-font-to-png.svg)][coveralls]
+[![PyPI version](https://img.shields.io/pypi/v/icon_font_to_png.svg)][pypi]
+[![Python versions](https://img.shields.io/pypi/pyversions/icon_font_to_png.svg)][pypi]
+[![License](https://img.shields.io/github/license/Pythonity/icon-font-to-png.svg)][license]
 ****
 
 Other libraries version informations are in requirement.txt
@@ -47,3 +46,17 @@ Expose the Flask HTTP port (5000) from the VM’s firewall. This is done via gcl
 gcloud compute firewall-rules create open-flask-rule --allow tcp:5000 --source-tags=flask-demo --source-ranges=0.0.0.0/0
 ```
 Or you can set the firewall in yout Google Instance in the browser.
+
+[coveralls]: https://coveralls.io/github/Pythonity/icon-font-to-png
+[github]: https://github.com/Pythonity/icon-font-to-png
+[github add issue]: https://github.com/Pythonity/icon-font-to-png/issues/new
+[if2p osx bug]: https://github.com/Pythonity/icon-font-to-png/issues/2#issuecomment-197068427
+[license]: https://github.com/Pythonity/icon-font-to-png/blob/master/LICENSE
+[odyniec]: https://github.com/odyniec
+[odyniec fa2p]: https://github.com/odyniec/font-awesome-to-png
+[pawelad]: https://github.com/pawelad
+[pillow]: https://pillow.readthedocs.org/en/latest/installation.html
+[pypi]: https://pypi.python.org/pypi/icon_font_to_png
+[pythonity]: https://pythonity.com/
+[pythonity blog]: http://blog.pythonity.com/
+[travis]: https://travis-ci.org/Pythonity/icon-font-to-png
