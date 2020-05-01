@@ -1,4 +1,9 @@
 # ReviewRating
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/Django)
+![PyPI](https://img.shields.io/pypi/v/pip)
+![](https://img.shields.io/badge/flask-1.1.2-brightgreen)
+![](https://img.shields.io/badge/ubuntu-18.0.4-orange)
+![](https://img.shields.io/badge/Google%20Cloud-Compute%20Engine-red)
 ## Deployment tools:  
 Google Cloud Compute Engine
 ## Platform and environment: 
