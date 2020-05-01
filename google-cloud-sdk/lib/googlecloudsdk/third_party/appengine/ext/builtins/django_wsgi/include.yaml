@@ -1,4 +1,0 @@
-handlers:
-- url: /.*
-  script: $PYTHON_LIB/google/appengine/ext/django/review_rating.py
-  position: tail
