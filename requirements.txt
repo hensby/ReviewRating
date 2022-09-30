@@ -6,5 +6,5 @@ gensim==3.8.0
 scikit-learn==0.22.2.post1
 beautifulsoup4==4.9.0
 wordcloud==1.6.0
-joblib==0.14.1
+joblib==1.2.0
 Flask==1.1.2
